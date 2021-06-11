@@ -1,6 +1,6 @@
 ## K3S Cluster STIG Automated Compliance Validation Profile
 
-<b>K3S Cluster</b> STIG Automated Compliance Validation Profile that works with Chef InSpec to perform automated compliance checks of the <b>K3S Cluster</b>. It is to be used in conjunction with the <b>[Kubernetes Node](https://gitlab.dsolab.io/scv-content/inspec/kubernetes/k3s/k3s-node-stig-baseline)</b> profile that performs automated compliance checks of the <b>K3S Nodes</b>.
+<b>K3S Cluster</b> STIG Automated Compliance Validation Profile that works with Chef InSpec to perform automated compliance checks of the <b>K3S Cluster</b>. It is to be used in conjunction with the <b>[K3S Node](https://gitlab.dsolab.io/scv-content/inspec/kubernetes/k3s/k3s-node-stig-baseline)</b> profile that performs automated compliance checks of the <b>K3S Nodes</b>.
 
 This automated Security Technical Implementation Guide (STIG) validator was developed to reduce the time it takes to perform a security check based upon STIG Guidance from DISA. These check results should provide information needed to receive a secure authority to operate (ATO) certification for the applicable technology.
 
