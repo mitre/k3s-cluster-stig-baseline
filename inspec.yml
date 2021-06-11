@@ -21,3 +21,4 @@ inputs:
     type: string
     value: 'v1.19.5'
     required: true
+    profile: k3s-cluster-stig-baseline
