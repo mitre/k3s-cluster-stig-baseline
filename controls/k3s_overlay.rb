@@ -1,2 +1,2 @@
-include_controls 'k3s-cluster-stig-baseline' do
+include_controls 'k8s-cluster-stig-baseline' do
 end
