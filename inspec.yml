@@ -12,7 +12,7 @@ supports:
 - platform: k8s
 
 depends:
-  - name: k3s-cluster-stig-baseline
+  - name: k8s-cluster-stig-baseline
     git: https://gitlab.dsolab.io/scv-content/inspec/kubernetes/baselines/k8s-cluster-stig-baseline.git
 
 inputs:

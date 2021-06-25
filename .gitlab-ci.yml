@@ -4,7 +4,7 @@ include:
   file: templates/templates.yml
 
 before_script:
-  - echo "SCV Pipeline for k8s node."
+  - echo "SCV Pipeline for k8s cluster."
 
 stages:
   - setup
