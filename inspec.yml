@@ -1,0 +1,24 @@
+name: k3s-cluster-stig-baseline
+title: K3S Cluster profile based on Kubernetes Security Technical Implementation Guideline (STIG) 
+maintainer: DISA DevSecOps Team 
+copyright: Defense Information Systems Agency (DISA)
+license: Apache-2.0
+summary: InSpec testing for baseline compliance with the Kubernetes STIG
+description: An InSpec profile verifying compliance with Kubernetes STIG version 1.16 
+version: 1.0.0
+inspec_version: ">= 4.0"
+
+supports:
+- platform: k8s
+
+depends:
+  - name: k8s-cluster-stig-baseline
+    git: https://gitlab.dsolab.io/scv-content/inspec/kubernetes/baselines/k8s-cluster-stig-baseline.git
+
+inputs:
+  - name: k8s_minium_version
+    description: 'Minimum version of Kubernetes deployment'
+    type: string
+    value: 'v1.19.5'
+    required: true
+    profile: k3s-cluster-stig-baseline
