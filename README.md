@@ -75,20 +75,25 @@ inspec detect -t k8s://
 **Note**: Replace the profile's directory name - e.g. - `<Profile>` with `.` if currently in the profile's root directory.
 
 ```sh
-inspec exec <Profile> -t k8s:// --controls=<control_id> <control_id> --show-progress
+inspec exec <Profile> -t k8s:// --controls=<control_id> <control_id> --reporter cli
 ```
 
 #### Execute a Single Control and save results as JSON 
 ```sh
-inspec exec <Profile> -t k8s:// --controls=<control_id> <control_id> --show-progress --reporter json:results.json
+inspec exec <Profile> -t k8s:// --controls=<control_id> <control_id> --reporter json:results.json
 ```
 
 #### Execute All Controls in the Profile 
 ```sh
-inspec exec <Profile> -t k8s:// --show-progress
+inspec exec <Profile> -t k8s:// --reporter cli
 ```
 
 #### Execute all the Controls in the Profile and save results as JSON 
 ```sh
-inspec exec <Profile> -t k8s:// --show-progress  --reporter json:results.json
+inspec exec <Profile> -t k8s:// --reporter json:results.json
+```
+
+#### Execute all the Controls in the Profile and and see the results as they are run and save results as JSON 
+```sh
+inspec exec <Profile> -t k8s:// --reporter progress-bar json:results.json
 ```
